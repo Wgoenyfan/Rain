@@ -14,10 +14,12 @@ title: 首页
 
   <h2>文章列表</h2>
   {% for post in site.posts %}
-    <div>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-      <p>{{ post.excerpt }}</p>
+    <div style="margin:10px 0;">
+      <!-- 只保留标题链接，点击进入详情页 -->
+      <h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
     </div>
   {% endfor %}
 </body>
