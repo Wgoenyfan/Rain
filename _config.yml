@@ -1,0 +1,16 @@
+# 站点基础信息
+title: Rain
+description: 我的第一个仓库
+# 关键：普通仓库必须配置baseurl，仓库名是rain，前面带斜杠
+baseurl: "/rain"
+# 站点域名（用户名.github.io 就填 ""，普通仓库不用改）
+url: "https://Wgoenyfan.github.io"
+
+# 文章目录配置（Jekyll默认读取_posts）
+permalink: /posts/:year/:month/:day/:title/
+
+# 时区
+timezone: Asia/Shanghai
+
+# 开启markdown渲染
+markdown: kramdown
